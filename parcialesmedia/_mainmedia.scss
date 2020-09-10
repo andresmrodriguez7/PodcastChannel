@@ -1,0 +1,209 @@
+main {
+    //posicionamiento y estilo de la descripcion
+    #description {
+        padding-left: 13.88vw;
+        padding-top: 120px;
+        width: 100vw;
+        h1 {
+            line-height: 84px;
+            font-size: 64px;
+            width: auto;
+            color: $font-dark;
+            margin-top: 0;
+            #dot {
+                color: $font-dot;
+                font-size: 64px;
+            }
+        }
+        .descripcion {
+            line-height: 24px;
+            font-size: 16px;
+            width: 628px;
+            height: 48px;
+        }
+        .descripcion::before {
+            content: "El portal de podcasts que explora el mundo de la programación y la tecnologia. ";
+        }
+        //posicionamiento y estilo del boton "conoce mas"
+        .btn-primary1 {
+            margin-top: 56px;
+            width: 226px;
+            height: 56px;
+            .text-btn-primary {
+                margin-top: 15px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    // seccion de podcasts
+    .bg-seccion-podcast {
+        height: 1042.6px;
+        padding: 0;
+        background-image: linear-gradient(225deg, $bg-gradient-top 0%, $bg-gradient-bottom 100%);
+        .titulo_seccion_ligth {
+            margin-bottom: 2.5vw;
+            font-size: 48px;
+            line-height: 62px;
+            padding-left: 13.88vw;
+            margin-left: 0;
+            margin-top: 182px;
+        }
+        #podcast {
+            display: grid;
+            grid-template-columns: 40.56vw 40.56vw;
+            grid-template-rows: 14.51vw 14.51vw;
+            row-gap: 72px;
+            padding: 0 6.9%;
+            width: 100%;
+            box-sizing: border-box;
+            .iframe-podcast {
+                margin-top: 72px;
+                width: 40.56vw;
+                height: 232px;
+                overflow: hidden;
+            }
+        }
+    }
+    // seccion de donde venimos
+    .bg-seccion-nosotros {
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100vw;
+        height: 38.2vw;
+        padding-left: 13.88vw;
+        box-sizing: border-box;
+        z-index: 100;
+        .mobile img {
+            margin-top: -11vw;
+            width: 31.73vw;
+            height: 45.83vw;
+        }
+        .donde_venimos {
+            width: 464px;
+            margin: 0;
+            box-sizing: border-box;
+            margin-left: 4.3vw;
+            .titulo_seccion_dark1 {
+                margin-left: 0;
+                width: 399px;
+                font-family: $font-title;
+                font-size: 48px;
+                line-height: 62px;
+                color: $font-dark;
+            }
+            p {
+                margin-left: 0;
+                width: 464px;
+                height: 204px;
+                font-size: 16px;
+                color: $font-dark;
+                line-height: 24px;
+            }
+        }
+    }
+    // seccion de invitados estelares
+    .invitados {
+        margin-top: 54px;
+        box-sizing: border-box;
+        .titulo_seccion_dark2 {
+            margin-left: 13.88vw;
+            margin-bottom: 2.5vw;
+            width: 481px;
+            font-size: 48px;
+            line-height: 62px;
+        }
+        .galeria {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 33.34vw 33.33vw 33.33vw;
+            grid-template-rows: 25.2vw 25.2vw;
+            justify-content: stretch;
+            img {
+                width: 33.34vw;
+                height: 25.2vw;
+            }
+        }
+    }
+    // seccion alguno de nuestros temas
+    .temas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        margin-bottom: 34px;
+        width: 100%;
+        .titulo_seccion_dark3 {
+            width: 586px;
+            font-size: 48px;
+            line-height: 62px;
+            margin-left: 13.88vw;
+        }
+        .iconos {
+            // margin-top: 69px;
+            margin: 69px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 18vw);
+            grid-template-rows: repeat(1, 104px 64px);
+            row-gap: 29px;
+            grid-auto-flow: column;
+            grid-auto-rows: auto;
+            img {
+                width: 104px;
+                height: 104px;
+                margin: 0;
+            }
+            p {
+                width: 220px;
+                margin: 0;
+            }
+        }
+    }
+    // sección de ultimas novedades
+    .bg-seccion-novedades {
+        padding: 0 0 141px 0;
+        width: 100vw;
+        height: 36vw;
+        .titulo_seccion_light {
+            width: 692px;
+            font-size: 36px;
+            line-height: 42px;
+            font-size: 48px;
+            line-height: 62px;
+        }
+        .btn-primary {
+            width: 345px;
+            height: 56px;
+            .text-btn-primary {
+                // margin-top: 17px;
+                font-size: 18px;
+                line-height: 56px;
+            }
+             ::after {
+                content: " LOS EPISODIOS";
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 36px 6.944vw 31px 6.944vw;
+        box-sizing: border-box;
+        margin-top: 34px;
+        p {
+            width: 269px;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0;
+        }
+        .social_media_icon_cont {
+            width: 232px;
+            padding-right: 28px;
+            margin: 0;
+            i {
+                font-size: 1.2em;
+            }
+        }
+    }
+}

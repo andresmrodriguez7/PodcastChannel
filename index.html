@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Channel | Proyecto 1 | Acamica</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo_menu" src="./imagenes/logo.svg" alt="logo">
+        <div>
+            <input type="checkbox" name="menu" id="menu_checker">
+            <label id="menu_open" for="menu_checker"><i class="fas fa-bars"></i></label>
+            <label id="menu_close" for="menu_checker"><i class="fas
+                        fa-times"></i></label>
+            <nav id="menu">
+                <ul class="secciones">
+                    <li><a href="#bg-seccion-podcast">episodios</a></li>
+                    <li><a href="#bg-seccion-nosotros">nosotros</a></li>
+                    <li><a href="#invitados">entrevista</a></li>
+                    <li><a href="#titulo_seccion_dark3">tópicos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main>
+        <!-- descripción del podcast channel -->
+        <section id="description">
+            <h1><span>Hello</span> <span id="world">world</span> <span>pale
+                        blue dot</span> <span id="dot">.</span></h1>
+            <p class="descripcion">Nuevos episodios, todos los jueves cada 15 dias.</p>
+            <!-- boton de conoce más -->
+            <div class="btn-primary1">
+                <p class="text-btn-primary">conocé más</p>
+            </div>
+        </section>
+        <!-- sección podcasts -->
+        <section class="bg-seccion-podcast">
+            <svg class="episode-backgound-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="white" points="0,0 100,0 0,50" />
+                    </svg>
+            <div class="titulo_seccion_ligth">
+                <h2 id="bg-seccion-podcast">Episodios</h2>
+            </div>
+            <div id="podcast">
+
+                <iframe class="iframe-podcast" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="298" height="225"></iframe>
+                <iframe class="iframe-podcast" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+                <iframe class="iframe-podcast" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
+                <iframe class="iframe-podcast" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
+            </div>
+            <svg class="episode-backgound-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polygon fill="white" points="0,100 100,0 100,100" />
+                        </svg>
+        </section>
+
+        <!-- seccion "de donde venimos?" -->
+        <section class="bg-seccion-nosotros">
+
+            <!-- imagen del celular -->
+            <div class="mobile">
+                <img src="./imagenes/phone.png" alt="mobile">
+            </div>
+
+            <div class="donde_venimos">
+                <h2 id="bg-seccion-nosotros" class="titulo_seccion_dark1">De dónde venimos</h2>
+                <p>Our postirungs, our imagined self-importance, the dilution that we have some privileged position in the Universe, are challenged by this point of pale light.<br> <br> Our planet is a lonely speck in the great enveloping cosmic dark. Is
+                    our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </div>
+        </section>
+
+        <!-- secion de invitados estelares -->
+        <section class="invitados">
+            <h2 class="titulo_seccion_dark2" id="invitados">Invitadas/os estelares
+            </h2>
+            <!-- galeria de imagenes -->
+            <div class="galeria">
+                <img id="grace" src="./imagenes/grace-hopper.png" alt="grace">
+                <img id="katie" src="./imagenes/Katie-Bouman.png" alt="katie">
+                <img id="margaret" src="./imagenes/Margaret_Hamilton.png" alt="margaret">
+                <img id="computer" src="./imagenes/E.R.A.Univac.png" alt="computer">
+                <img id="operator" src="./imagenes/Computer_operators.png" alt="operators">
+                <img id="susan" src="./imagenes/susan-kare.png" alt="susan">
+            </div>
+        </section>
+
+        <!-- sección alguno de nuestros temas -->
+        <section class="temas">
+            <h2 class="titulo_seccion_dark3" id="titulo_seccion_dark3">Algunos de nuestros temas</h2>
+            <!-- iconos -->
+            <div class="iconos">
+                <img src="./imagenes/icon1.svg" id="icon1" alt="icon1">
+                <p class="titulo">Trabajo remoto</p>
+                <img src="./imagenes/icon2.svg" id="icon2" alt="icon2">
+                <p class="titulo">Repensando la programación</p>
+                <img src="./imagenes/icon3.svg" id="icon3" alt="icon3">
+                <p class="titulo">Bases del código</p>
+                <img src="./imagenes/icon4.svg" id="icon4" alt="icon4">
+                <p class="titulo">Seguridad informática</p>
+            </div>
+        </section>
+
+        <!-- sección de ultimas novedades -->
+        <section class="bg-seccion-novedades">
+            <svg class="episode-backgound-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100
+                            100" preserveAspectRatio="none">
+                            <polygon fill="white" points="0,0 100,0 0,50" />
+                            </svg>
+            <h2 class="titulo_seccion_light">¿Querés las últimas novedades?
+            </h2>
+            <!-- boton de escucha lo ultimo -->
+            <div class="btn-primary">
+                <p class="text-btn-primary">escuchá</p>
+            </div>
+        </section>
+        <footer>
+            <p>© 2019- Hello blue pale dot</p>
+            <div class="social_media_icon_cont">
+                <i class="fab fa-spotify"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-telegram"></i>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>

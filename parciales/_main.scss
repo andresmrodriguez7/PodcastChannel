@@ -1,0 +1,281 @@
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    //posicionamiento y estilo de la descripcion
+    #description {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        padding-left: 5vw;
+        width: 100vw;
+        box-sizing: border-box;
+        h1 {
+            margin-top: 29px;
+            line-height: 42px;
+            font-size: 36px;
+            font-family: $font-title;
+            color: $font-dark;
+            letter-spacing: 0;
+            width: 288px;
+            #world {
+                text-decoration: line-through;
+            }
+        }
+        .descripcion {
+            @extend h1;
+            line-height: 22px;
+            font-size: 14px;
+            font-family: $font-primary;
+            margin-top: 19px;
+        }
+        .descripcion::before {
+            content: "Un podcast que explora el mundo de la programación. ";
+        }
+        //posicionamiento y estilo del boton "conoce mas"
+        .btn-primary1 {
+            width: 90vw;
+            height: 48px;
+            margin-top: 44px;
+            margin-bottom: 24px;
+            background-color: $bg-button;
+            vertical-align: middle;
+            color: $font-dark;
+            &:hover {
+                background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+                color: white;
+            }
+            .text-btn-primary {
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 12px;
+                letter-spacing: 0;
+                font-family: $font-title;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+    // seccion de podcasts
+    .bg-seccion-podcast {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 1203.5px;
+        background-image: linear-gradient(225deg, $bg-gradient-top 0%, $bg-gradient-bottom 100%);
+        box-sizing: border-box;
+        .titulo_seccion_ligth {
+            font-family: $font-title;
+            font-size: 36px;
+            color: $font-light;
+            margin-bottom: 6.562vw;
+            margin-top: 64px;
+            margin-left: 5vw;
+            box-sizing: border-box;
+        }
+        #podcast {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            .iframe-podcast {
+                width: 298px;
+                height: 225px;
+                margin-top: 11px;
+                overflow: hidden;
+            }
+        }
+        .episode-backgound-top {
+            position: absolute;
+            top: 0;
+            height: 15vw;
+            width: 100%;
+        }
+        .episode-backgound-bottom {
+            position: absolute;
+            bottom: 0;
+            height: 10vw;
+            width: 100%;
+        }
+    }
+    // seccion de donde venimos
+    .bg-seccion-nosotros {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 100;
+        .mobile img {
+            margin-top: -100px;
+            margin-bottom: 8.4vw;
+            width: 100%;
+            height: 162vw;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+        .donde_venimos {
+            .titulo_seccion_dark1 {
+                margin-left: 5vw;
+                margin-bottom: 2.5vw;
+                width: 288px;
+                font-family: $font-title;
+                font-size: 36px;
+                color: $font-dark;
+            }
+            p {
+                margin-left: 5vw;
+                width: 288px;
+                font-family: $font-primary;
+                font-size: 14px;
+                color: $font-dark;
+                line-height: 22px;
+            }
+        }
+    }
+    // seccion de invitados estelares
+    .invitados {
+        display: flex;
+        flex-direction: column;
+        margin-top: 54px;
+        .titulo_seccion_dark2 {
+            margin-left: 5vw;
+            margin-bottom: 4.3vw;
+            width: 288px;
+            font-family: $font-title;
+            font-size: 36px;
+            color: $font-dark;
+        }
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                height: 76vw;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+        }
+    }
+    // seccion alguno de nuestros temas
+    .temas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        .titulo_seccion_dark3 {
+            width: 288px;
+            font-family: $font-title;
+            font-size: 36px;
+            color: $font-dark;
+            margin-left: 5vw;
+        }
+        .iconos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 130px auto);
+            grid-auto-rows: auto;
+            grid-auto-columns: auto;
+            justify-items: center;
+            width: auto;
+            margin-top: 10.625vw;
+            padding: 0;
+            img {
+                width: 104px;
+                height: 104px;
+                margin: 13px 0;
+            }
+            p {
+                font-family: $font-title;
+                font-size: 24px;
+                color: $font-dark;
+                letter-spacing: 0;
+                text-align: center;
+                font-weight: 600;
+                line-height: 32px;
+                width: 288px;
+                margin-bottom: 36px;
+            }
+        }
+    }
+    // sección de ultimas novedades
+    .bg-seccion-novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 341px;
+        padding: 0 0 21vw 0;
+        box-sizing: border-box;
+        background-image: linear-gradient(225deg, $bg-gradient-top 0%, $bg-gradient-bottom 100%);
+        .titulo_seccion_light {
+            width: 288px;
+            font-family: $font-title;
+            font-size: 36px;
+            line-height: 42px;
+            color: $font-light;
+            text-align: center;
+        }
+        .btn-primary {
+            margin-top: 36px;
+            width: 90vw;
+            height: 48px;
+            background-color: $bg-button;
+            // vertical-align: middle;
+            .text-btn-primary {
+                text-transform: uppercase;
+                text-align: center;
+                // margin-top: 12px;
+                letter-spacing: 0;
+                font-family: $font-title;
+                color: $font-dark;
+                font-size: 16px;
+                line-height: 48px;
+            }
+             ::after {
+                content: " LOS EPISODIOS";
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        p {
+            width: 100%;
+            text-align: center;
+            font-family: $font-primary;
+            font-size: 14px;
+            line-height: 22px;
+            color: $font-dark;
+            margin-bottom: 16px;
+            margin-top: 24px;
+            font-weight: 400;
+        }
+        .social_media_icon_cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0 30px;
+            margin-bottom: 31px;
+            box-sizing: border-box;
+            i {
+                font-size: 1.1em;
+                color: $font-dark;
+                margin: 0px;
+            }
+        }
+    }
+}
